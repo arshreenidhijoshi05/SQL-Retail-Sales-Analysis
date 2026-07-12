@@ -166,19 +166,12 @@ Project Setup
 ```text
 sql-retail-sales-analysis/
 │
-├── datasets/
-│   ├── dim_customers.csv
-│   ├── dim_products.csv
-│   └── fact_sales.csv
-│
-├── sql/
-│   ├── database_setup.sql
-│   ├── exploratory_data_analysis.sql
-│   ├── customer_analysis.sql
-│   ├── product_analysis.sql
-│   └── business_reports.sql
-│
-└── README.md
+├── README.md
+├── retail_sales_analysis.sql
+└── datasets/
+    ├── dim_customers.csv
+    ├── dim_products.csv
+    └── fact_sales.csv
 ```
 
 ![SQL](https://img.shields.io/badge/SQL-PostgreSQL-blue)
