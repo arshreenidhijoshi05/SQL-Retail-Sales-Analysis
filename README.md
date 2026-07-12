@@ -37,59 +37,69 @@ gold.fact_sales            Transaction-level sales records linking customers,
                            products, orders, quantity, price and sales amount
 
 5. DataBase Schema
-+------------------------+
-|     dim_customers      |
-+------------------------+
-| PK customer_key        |
-| customer_id            |
-| customer_number        |
-| first_name             |
-| last_name              |
-| country                |
-| ...                    |
-+------------------------+
-           |
-           | 1
-           |
-           |<---------------------- FK customer_key
-           |
-           | *
-+------------------------+
-|      fact_sales        |
-+------------------------+
-| order_number           |
-| FK customer_key        |
-| FK product_key         |
-| order_date             |
-| quantity               |
-| sales_amount           |
-| price                  |
-| ...                    |
-+------------------------+
-           |
-           | *
-           |
-           |----------------------> 1
-           |
-+------------------------+
-|      dim_products      |
-+------------------------+
-| PK product_key         |
-| product_name           |
-| category               |
-| subcategory            |
-| cost                   |
-| ...                    |
-+------------------------+
+The project uses a **star schema** consisting of one fact table (`fact_sales`) and two dimension tables (`dim_customers` and `dim_products`).
+
+- `dim_customers` stores customer demographic information.
+- `dim_products` stores product details and categories.
+- `fact_sales` records transaction-level sales and links customers with products through foreign keys.
+
+```mermaid
+erDiagram
+    DIM_CUSTOMERS ||--o{ FACT_SALES : customer_key
+    DIM_PRODUCTS  ||--o{ FACT_SALES : product_key
+
+    DIM_CUSTOMERS {
+        int customer_key PK
+        int customer_id
+        string customer_number
+        string first_name
+        string last_name
+        string country
+    }
+
+    FACT_SALES {
+        string order_number
+        int customer_key FK
+        int product_key FK
+        date order_date
+        int quantity
+        int sales_amount
+        int price
+    }
+
+    DIM_PRODUCTS {
+        int product_key PK
+        string product_name
+        string category
+        string subcategory
+        int cost
+    }
+```
 
 6. Database Relationship
 
-dim_customers
-      |
-      | customer_key
-      |
-fact_sales
-      |
-      | product_key
-      |
-dim_products
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
