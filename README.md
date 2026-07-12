@@ -1,13 +1,25 @@
 # SQL-Retail-Business-Analysis-Project
-
 End-to-end SQL project using PostgreSQL to analyze retail sales data through exploratory analysis, customer segmentation, product performance, revenue insights, CTEs, window functions, and business reporting.
 
-1. Project Overview:-
+# Table of Contents
+1. Project Overview
+2. Business Problem
+3. Objectives
+4. Dataset
+5. Database Schema
+6. Tools Used
+7. Skills Demonstrated
+8. Key Analyses
+9. Business Questions
+10. SQL Concepts
+11. Key Insights
+
+## 1. Project Overview
  - Retail businesses generate thousands of transactions every day. While transactional data is valuable, meaningful business decisions require transforming this raw data into actionable insights.
  - This project demonstrates how SQL can be used to analyze retail sales data by exploring customer behavior, sales performance, product trends, and revenue generation.
  - The project showcases practical SQL techniques commonly used by Data Analysts and Business Analysts.
 
-2. Business Problem:-
+## 2. Business Problem
 Business stakeholders need answers to questions such as:
 - Are sales improving over time?
 - Which customers generate the highest revenue?
@@ -17,7 +29,7 @@ Business stakeholders need answers to questions such as:
 - Which business areas require attention?
 This project answers these questions using SQL
 
-3. Objectives:-
+## 3. Objectives
 - Perform exploratory data analysis
 - Analyze sales performance
 - Evaluate product performance
@@ -25,18 +37,16 @@ This project answers these questions using SQL
 - Generate business reports
 - Apply advanced SQL techniques
 
-4. Dataset
---------------------------------------------------------------------------------
-TABLE NAME                 DESCRIPTION
---------------------------------------------------------------------------------
-gold.dim_customers         Customer demographic information
+## 4. Dataset Overview
+The project uses a retail sales database consisting of three related tables.
 
-gold.dim_products          Product details including category and cost
+| Table | Description |
+|-------|-------------|
+| `gold.dim_customers` | Customer demographic information including customer details, gender, country, and account creation date. |
+| `gold.dim_products` | Product information including product name, category, subcategory, product line, and cost. |
+| `gold.fact_sales` | Transaction-level sales records linking customers and products, including order details, quantity sold, price, and sales amount. |
 
-gold.fact_sales            Transaction-level sales records linking customers,
-                           products, orders, quantity, price and sales amount
-
-5. DataBase Schema
+## 5. Database Schema
 The project uses a **star schema** consisting of one fact table (`fact_sales`) and two dimension tables (`dim_customers` and `dim_products`).
 
 - `dim_customers` stores customer demographic information.
@@ -76,12 +86,72 @@ erDiagram
     }
 ```
 
-6. Database Relationship
+## 6. Tools Used
+- PostgreSQL
+- SQL
+- pgAdmin
+- Window Functions
+- Aggregate Functions
+- Common Table Expressions (CTEs)
+- Ranking Functions
 
+## 7. Skills Demonstrated
+- SQL Joins
+- GROUP BY
+- Aggregate Functions
+- CASE Statements
+- Common Table Expressions (CTEs)
+- Window Functions
+- Ranking Functions
+- Date Functions
+- Business Reporting
+- Customer Analytics
 
+## 8. Key Analyses
+- Sales Trend Analysis
+- Monthly Revenue Analysis
+- Customer Segmentation
+- Top Customers
+- Product Performance
+- Category Performance
+- Sales Ranking
+- Running Totals
+- Moving Average
+- Revenue Contribution
 
+## 9. Business Questions Addressed
+- Which customers contribute the highest revenue?
+- Which products sell the most?
+- Which product categories perform best?
+- What are the monthly sales trends?
+- Which countries generate the highest sales?
+- What is the average order value?
+- Which products have the highest revenue?
 
+## 10. SQL Techniques Used
+- SELECT
+- WHERE
+- ORDER BY
+- GROUP BY
+- HAVING
+- CASE
+- JOINS
+- CTEs
+- Window Functions
+- ROW_NUMBER()
+- RANK()
+- DENSE_RANK()
+- SUM() OVER()
+- AVG() OVER()
+- COUNT()
+- Aggregate Functions
 
+## 11. Few Examples of key insights of this project
+- A small percentage of customers contribute a significant portion of total revenue.
+- Certain product categories consistently outperform others.
+- Monthly sales exhibit seasonal trends.
+- Revenue is concentrated among a limited number of high-performing products.
+- Customer purchasing behavior varies across demographic groups.
 
 
 
