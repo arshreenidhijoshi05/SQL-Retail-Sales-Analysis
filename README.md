@@ -1,7 +1,7 @@
-# SQL-Retail-Business-Analysis-Project
+# SQL - Retail Sales Analysis
 End-to-end SQL project using PostgreSQL to analyze retail sales data through exploratory analysis, customer segmentation, product performance, revenue insights, CTEs, window functions, and business reporting.
 
-# Table of Contents
+## Table of Contents
 1. Project Overview
 2. Business Problem
 3. Objectives
@@ -154,7 +154,13 @@ erDiagram
 - Customer purchasing behavior varies across demographic groups.
 
 
-
+## NOTE:
+Project Setup
+1. Clone the repository.
+2. Create the PostgreSQL database.
+3. Execute the database creation script.
+4. Import the CSV files.
+5. Run the SQL analysis scripts.
 
 
 
