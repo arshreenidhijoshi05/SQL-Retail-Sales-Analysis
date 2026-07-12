@@ -1,5 +1,5 @@
-# SQL - Retail Sales Analysis
-End-to-end SQL project using PostgreSQL to analyze retail sales data through exploratory analysis, customer segmentation, product performance, revenue insights, CTEs, window functions, and business reporting.
+# SQL - Retail Sales Analysis using SQL
+An end-to-end SQL analytics project built using PostgreSQL to analyze retail sales data, uncover customer and product insights, and generate business-oriented reports using advanced SQL techniques.
 
 ## Table of Contents
 1. Project Overview
@@ -107,7 +107,7 @@ erDiagram
 - Business Reporting
 - Customer Analytics
 
-## 8. Key Analyses
+## 8. Key Analysis
 - Sales Trend Analysis
 - Monthly Revenue Analysis
 - Customer Segmentation
@@ -146,13 +146,12 @@ erDiagram
 - COUNT()
 - Aggregate Functions
 
-## 11. Few Examples of key insights of this project
+## 11. Key Insights
 - A small percentage of customers contribute a significant portion of total revenue.
 - Certain product categories consistently outperform others.
 - Monthly sales exhibit seasonal trends.
 - Revenue is concentrated among a limited number of high-performing products.
 - Customer purchasing behavior varies across demographic groups.
-
 
 ## NOTE:
 Project Setup
@@ -162,20 +161,27 @@ Project Setup
 4. Import the CSV files.
 5. Run the SQL analysis scripts.
 
+## 13. Repository Structure
 
+```text
+sql-retail-sales-analysis/
+│
+├── datasets/
+│   ├── dim_customers.csv
+│   ├── dim_products.csv
+│   └── fact_sales.csv
+│
+├── sql/
+│   ├── database_setup.sql
+│   ├── exploratory_data_analysis.sql
+│   ├── customer_analysis.sql
+│   ├── product_analysis.sql
+│   └── business_reports.sql
+│
+└── README.md
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![SQL](https://img.shields.io/badge/SQL-PostgreSQL-blue)
+![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-336791)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+![License](https://img.shields.io/badge/License-MIT-green)
