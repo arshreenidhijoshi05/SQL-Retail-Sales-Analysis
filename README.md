@@ -161,7 +161,7 @@ Project Setup
 4. Import the CSV files.
 5. Run the SQL analysis scripts.
 
-## 13. Repository Structure
+Repository Structure
 
 ```text
 sql-retail-sales-analysis/
